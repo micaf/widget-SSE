@@ -4,7 +4,7 @@
     </div>
     <div class="widget-content">
       <label class="rate-label">Prezzo prodotto: </label>
-      <span class="rate">{{ rate | currency:'EUR':'symbol':'1.2-2' }}</span>
+      <span class="rate" *ngIf="isActive">{{ rate | currency:'EUR':'symbol':'1.2-2' }}</span>
     </div>
     <div class="widget-footer">
       <button (click)="toggleWidget()" class="widget-button">

@@ -8,7 +8,7 @@ import { WidgetService } from './widget.service';
 })
 export class WidgetComponent implements OnInit{
   rate!: number;
-  isActive: boolean = true;
+  isActive: boolean = false;
   eventSource!: EventSource;
   
   constructor(private widgetService: WidgetService){}
